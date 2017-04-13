@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the New page for Coupons</h1>
+    <h2>Coupon Form</h2>
+
+    <%= form_tag coupons_path do %>
+     <label>Coupon Code: </label>
+     <%= text_field_tag :coupon_code %>
+     <label>Store: </label>
+     <%= text_field_tag :store %>
+     <%= submit_tag "Submit Coupon" %>
+    <% end %>
+
+  </body>
+</html>

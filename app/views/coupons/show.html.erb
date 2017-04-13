@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>This is the Show page for Coupon</h1>
+<!-- 
+    <h1><%=@coupon.coupon_code%></h1>
+    <h1><%=@coupon.store%></h1> -->
+
+    <h1><%= link_to @coupon.coupon_code, coupon_path = @coupon.coupon_code%></h1>
+    <h1><%= link_to @coupon.store, coupon_path = @coupon.store%></h1>
+
+  </body>
+</html>
